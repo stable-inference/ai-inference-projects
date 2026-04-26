@@ -1,0 +1,19 @@
+# LLM Local Test
+
+## Goal
+Run a local LLM on my machine
+
+## Hardware
+- GPU: ...
+- RAM: ...
+
+## Model
+...
+
+## Result
+- Status: working / not working
+- Speed: ...
+- Issues: ...
+
+## Notes
+...
