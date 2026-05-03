@@ -3,6 +3,15 @@
 ## Goal
 Run and benchmark local LLMs on consumer hardware and understand what actually works.
 
+## TL;DR
+
+- 3 GPUs → unstable on standard risers
+- SlimSAS + PCIe split (x8 + x4 + x4) → stable
+- 4GB GPUs can run LLMs with quantization
+
+👉 Main takeaway:
+Hardware setup matters more than expected
+
 ---
 
 ## Summary
@@ -225,6 +234,16 @@ System shows stable GPU usage during inference.
 ### Conclusion
 
 👉 The system is now stable and capable of running local LLMs on multi-GPU setup.
+
+---
+
+## How to reproduce
+
+1. Configure PCIe split (x8 + x4 + x4)
+2. Use SlimSAS risers (not standard mining ones)
+3. Start with 1–2 GPUs
+4. Use quantized GGUF models
+5. Test stability before scaling to 3+ GPUs
 
 ---
 
