@@ -1,4 +1,6 @@
-# LLM Local Test
+# Multi-GPU Inference on AMD 4GB GPUs
+
+Real-world experiments running LLMs on low-end consumer GPUs.
 
 ## Goal
 Run and benchmark local LLMs on consumer hardware and understand what actually works.
@@ -7,7 +9,7 @@ Run and benchmark local LLMs on consumer hardware and understand what actually w
 
 - 3 GPUs → unstable on standard risers
 - SlimSAS + PCIe split (x8 + x4 + x4) → stable
-- 4GB GPUs can run LLMs with quantization
+- 4GB GPUs can run LLMs (only with quantization)
 
 👉 Main takeaway:
 Hardware setup matters more than expected
